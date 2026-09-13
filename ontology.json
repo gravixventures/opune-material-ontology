@@ -1,0 +1,312 @@
+{
+  "ontology": {
+    "name": "OPUNÉ® Material Ontology",
+    "version": "0.1.0",
+    "status": "evolving",
+    "description": "Structured technical vocabulary for plant-based biomaterial feedstocks, processing, material architectures, applications, evaluation, evidence, and lifecycle assessment.",
+    "scope": [
+      "Feedstock",
+      "Processing",
+      "Material Architecture",
+      "Material System",
+      "Application",
+      "Evaluation",
+      "Evidence",
+      "Lifecycle Assessment"
+    ]
+  },
+  "core_model": {
+    "development_pathway": [
+      "Feedstock",
+      "Processing",
+      "Material Architecture",
+      "Material System",
+      "Application",
+      "Evaluation"
+    ],
+    "lifecycle_pathway": [
+      "Feedstock",
+      "Processing",
+      "Material System",
+      "Lifecycle Assessment"
+    ]
+  },
+  "classes": {
+    "feedstock": {
+      "description": "A biological, plant-derived, agricultural-residue, or other defined input investigated or used as a starting material for biomaterial development.",
+      "examples": [
+        "Cactus-derived biomass",
+        "Wheat straw",
+        "Rice straw",
+        "Rice husk",
+        "Corn stalk",
+        "Corn husk",
+        "Sugarcane bagasse",
+        "Cotton stalk",
+        "Banana pseudostem",
+        "Coconut coir",
+        "Coconut shell",
+        "Groundnut shell"
+      ]
+    },
+    "processing": {
+      "description": "Operations through which feedstock or intermediate materials are prepared, transformed, combined, formed, consolidated, finished, or converted.",
+      "examples": [
+        "Feedstock Preparation",
+        "Size Reduction",
+        "Separation",
+        "Fiber Preparation",
+        "Particle Preparation",
+        "Drying",
+        "Formulation",
+        "Mixing",
+        "Forming",
+        "Molding",
+        "Consolidation",
+        "Lamination",
+        "Surface Treatment",
+        "Coating",
+        "Finishing",
+        "Conversion"
+      ]
+    },
+    "material_architecture": {
+      "description": "The structural organization of constituents within a material system.",
+      "examples": [
+        "Fibrous Structures",
+        "Non-Woven Architectures",
+        "Particulate Composites",
+        "Molded Forms",
+        "Rigid Matrices",
+        "Flexible Bio-Layers",
+        "Composite Substrates",
+        "Surface-Layer Systems",
+        "Backing Architectures"
+      ]
+    },
+    "material_system": {
+      "description": "The complete material configuration being evaluated for a defined purpose or application.",
+      "components": [
+        "Feedstock-derived material",
+        "Matrix",
+        "Reinforcement",
+        "Filler",
+        "Substrate",
+        "Backing",
+        "Surface Layer",
+        "Coating",
+        "Finish"
+      ]
+    },
+    "application": {
+      "description": "The industrial context in which a defined material system is intended to be evaluated or used.",
+      "examples": [
+        "Automotive Interiors",
+        "Footwear",
+        "Fashion",
+        "Leather Goods",
+        "Furniture",
+        "Architectural Interiors",
+        "Packaging",
+        "Luxury Accessories",
+        "Aviation",
+        "Industrial Products"
+      ]
+    },
+    "evaluation": {
+      "description": "A structured process used to characterize or assess a material system using defined parameters, methods, or requirements.",
+      "examples": [
+        "Material Characterization",
+        "Physical Evaluation",
+        "Mechanical Evaluation",
+        "Surface Evaluation",
+        "Flexibility Evaluation",
+        "Durability Evaluation",
+        "Dimensional Evaluation",
+        "Processing Evaluation",
+        "Application-Specific Testing",
+        "Laboratory Testing",
+        "Comparative Evaluation",
+        "Lifecycle Assessment",
+        "Regulatory and Compliance Evaluation"
+      ]
+    },
+    "evidence": {
+      "description": "Information supporting a technical claim, measurement, relationship, assessment, or status.",
+      "examples": [
+        "Primary Material Data",
+        "Primary Process Data",
+        "Laboratory Test Data",
+        "Laboratory Reports",
+        "Published Scientific Evidence",
+        "Technical Standards and Methods",
+        "Regulatory and Government Sources",
+        "Supplier or Supply Evidence",
+        "Customer or Application Requirements",
+        "Derived Information",
+        "Comparative Evidence",
+        "Lifecycle Data",
+        "Validation Evidence",
+        "Qualification Evidence"
+      ]
+    },
+    "lifecycle_assessment": {
+      "description": "A defined methodology for evaluating environmental impacts associated with a product system across specified lifecycle stages and system boundaries."
+    }
+  },
+  "relationships": [
+    {
+      "subject": "Feedstock",
+      "predicate": "processed-through",
+      "object": "Processing"
+    },
+    {
+      "subject": "Processing",
+      "predicate": "produces-or-contributes-to",
+      "object": "Material Architecture"
+    },
+    {
+      "subject": "Material Architecture",
+      "predicate": "forms-part-of",
+      "object": "Material System"
+    },
+    {
+      "subject": "Material System",
+      "predicate": "evaluated-for",
+      "object": "Application"
+    },
+    {
+      "subject": "Application",
+      "predicate": "defines",
+      "object": "Application Requirement"
+    },
+    {
+      "subject": "Application Requirement",
+      "predicate": "translated-into",
+      "object": "Material Specification"
+    },
+    {
+      "subject": "Material Specification",
+      "predicate": "evaluated-by",
+      "object": "Test Method"
+    },
+    {
+      "subject": "Test Method",
+      "predicate": "produces",
+      "object": "Test Result"
+    },
+    {
+      "subject": "Test Result",
+      "predicate": "supported-by",
+      "object": "Evidence"
+    },
+    {
+      "subject": "Evidence",
+      "predicate": "supports",
+      "object": "Assessment"
+    },
+    {
+      "subject": "Assessment",
+      "predicate": "may-establish",
+      "object": "Validation"
+    },
+    {
+      "subject": "Feedstock",
+      "predicate": "evaluated-through",
+      "object": "Lifecycle Assessment"
+    },
+    {
+      "subject": "Processing",
+      "predicate": "evaluated-through",
+      "object": "Lifecycle Assessment"
+    },
+    {
+      "subject": "Material System",
+      "predicate": "evaluated-through",
+      "object": "Lifecycle Assessment"
+    }
+  ],
+  "semantic_constraints": [
+    {
+      "subject": "Plant-Based Biomaterial",
+      "constraint": "does-not-imply",
+      "object": "Sustainable"
+    },
+    {
+      "subject": "Plant-Based Biomaterial",
+      "constraint": "does-not-imply",
+      "object": "Biodegradable"
+    },
+    {
+      "subject": "Plant-Derived Feedstock",
+      "constraint": "does-not-imply",
+      "object": "Entirely Plant-Based Material System"
+    },
+    {
+      "subject": "Laboratory Testing",
+      "constraint": "does-not-imply",
+      "object": "Commercial Qualification"
+    },
+    {
+      "subject": "Tested",
+      "constraint": "does-not-imply",
+      "object": "Validated"
+    },
+    {
+      "subject": "Validated",
+      "constraint": "does-not-imply",
+      "object": "Certified"
+    },
+    {
+      "subject": "Feedstock",
+      "constraint": "does-not-imply",
+      "object": "Application Suitability"
+    },
+    {
+      "subject": "Lifecycle Data",
+      "constraint": "does-not-imply",
+      "object": "Completed Lifecycle Assessment"
+    }
+  ],
+  "evidence_statuses": [
+    "Unverified",
+    "Documented",
+    "Characterized",
+    "Tested",
+    "Validated",
+    "Qualified"
+  ],
+  "development_statuses": [
+    "Investigation",
+    "Development",
+    "Under Evaluation",
+    "Characterized",
+    "Tested",
+    "Validated",
+    "Qualified",
+    "Commercial Application"
+  ],
+  "evidence_principles": [
+    "Claims should have identifiable supporting evidence.",
+    "Measurements should retain their method and conditions.",
+    "Comparative claims should use comparable evidence.",
+    "Lifecycle claims should have defined boundaries and methodology.",
+    "Regulatory claims should be jurisdiction-specific.",
+    "Targets should remain distinct from achieved results.",
+    "Hypotheses should remain distinct from established facts.",
+    "Evidence should not be generalized beyond its documented scope."
+  ],
+  "governance": {
+    "principles": [
+      "Technical terminology should be specific and consistent.",
+      "Relationships should be evidence-compatible.",
+      "Unsupported universal claims should not be introduced.",
+      "Substantive changes should be version-controlled.",
+      "The ontology is descriptive and does not establish an industry standard."
+    ]
+  },
+  "publisher": {
+    "name": "OPUNÉ®",
+    "website": "https://www.opune.in/"
+  }
+}
