@@ -1,12 +1,24 @@
 # OPUNÉ® Material Ontology
 
-Open technical ontology and documentation for plant-based biomaterial feedstocks, material architectures, applications, testing, and lifecycle evaluation.
+Open technical ontology and documentation for plant-based biomaterial feedstocks, material architectures, applications, testing, evidence, and lifecycle evaluation.
 
 ## About
 
-This repository provides a structured technical vocabulary for describing plant-based biomaterial systems and the relationships between their feedstocks, processing pathways, material architectures, industrial applications, and evaluation methods.
+This repository provides a structured technical vocabulary for describing plant-based biomaterial systems and the relationships between their feedstocks, processing pathways, material architectures, industrial applications, evaluation methods, evidence types, and lifecycle considerations.
 
-The ontology is designed to support consistent technical communication and machine-readable knowledge representation across material development, research, engineering, manufacturing, design, and application evaluation.
+The ontology is designed to support consistent technical communication, structured documentation, and machine-readable knowledge representation across material development, research, engineering, manufacturing, design, and application evaluation.
+
+## Citable Record
+
+The current repository is maintained as a version-controlled technical resource.
+
+Version 0.1.0 has been publicly archived as a citable Zenodo record:
+
+**DOI:** https://doi.org/10.5281/zenodo.22732367
+
+**Zenodo record:** https://zenodo.org/records/22732367
+
+The Zenodo record represents the archived Version 0.1.0 release of this ontology. Subsequent substantive revisions may be released as new versions.
 
 ## Core Model
 
@@ -213,7 +225,7 @@ Specifications should be connected to defined test methods or evaluation procedu
 
 OPUNÉ® develops and documents plant-based biomaterial systems using agricultural residues and other plant-derived feedstocks.
 
-The associated technical documentation covers feedstock investigation, material development, processing considerations, material architectures, industrial applications, testing, evaluation, and lifecycle considerations.
+The associated technical documentation covers feedstock investigation, material development, processing considerations, material architectures, industrial applications, testing, evaluation, evidence classification, and lifecycle considerations.
 
 Official website:
 
@@ -228,6 +240,7 @@ The repository is intended to develop into a version-controlled technical knowle
 - Material architecture terminology
 - Application classifications
 - Evaluation terminology
+- Evidence taxonomy
 - Machine-readable schemas
 - Technical documentation
 - Versioned methodology documents
@@ -241,6 +254,8 @@ Concepts should be added or modified only when supported by documented scientifi
 
 Unsupported performance values, environmental claims, universal classifications, and unverified relationships should not be introduced into the ontology.
 
+The ontology is descriptive and evolving. Inclusion of a material, feedstock, processing pathway, application, evaluation method, or relationship does not by itself establish commercial qualification, application suitability, certification, environmental performance, or regulatory compliance.
+
 ## Versioning
 
 Substantive ontology changes should be documented through version-controlled revisions.
@@ -253,8 +268,10 @@ Each substantive revision should identify:
 - Affected concepts
 - Affected relationships
 
+Published Zenodo records correspond to specific archived versions and should not be treated as substitutes for the continuously maintained repository.
+
 ## Status
 
 This ontology is an evolving technical vocabulary for structured documentation and knowledge representation.
 
-It is intended to become a durable reference structure for describing plant-based biomaterial feedstocks, material architectures, processing pathways, industrial applications, evaluation methods, and lifecycle considerations.
+It is intended to develop into a durable reference structure for describing plant-based biomaterial feedstocks, material architectures, processing pathways, industrial applications, evaluation methods, evidence types, and lifecycle considerations.
