@@ -1,0 +1,264 @@
+{
+  "schema_name": "OPUNÉ® Material Record Schema",
+  "schema_version": "0.1.0",
+  "description": "Structured schema for documenting defined plant-based biomaterial systems, their feedstocks, processing, architectures, applications, evaluation, and evidence.",
+  "record_type": "material_system",
+  "required_fields": [
+    "material_id",
+    "material_name",
+    "status"
+  ],
+  "fields": {
+    "material_id": {
+      "type": "string",
+      "description": "Unique identifier for the material record."
+    },
+    "material_name": {
+      "type": "string",
+      "description": "Defined name of the material system."
+    },
+    "status": {
+      "type": "string",
+      "allowed_values": [
+        "Investigation",
+        "Development",
+        "Under Evaluation",
+        "Characterized",
+        "Tested",
+        "Validated",
+        "Qualified",
+        "Commercial Application"
+      ]
+    },
+    "feedstocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "fields": {
+          "name": {
+            "type": "string"
+          },
+          "classification": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "processing": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "fields": {
+          "process_class": {
+            "type": "string"
+          },
+          "process_step": {
+            "type": "string"
+          },
+          "conditions": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "material_architecture": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "fields": {
+          "architecture_class": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "fields": {
+          "component_type": {
+            "type": "string"
+          },
+          "identity": {
+            "type": "string"
+          },
+          "function": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "applications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "fields": {
+          "application_domain": {
+            "type": "string"
+          },
+          "product_context": {
+            "type": "string"
+          },
+          "construction": {
+            "type": "string"
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "specifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "fields": {
+          "parameter": {
+            "type": "string"
+          },
+          "requirement": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "test_method": {
+            "type": "string"
+          },
+          "acceptance_criterion": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evaluations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "fields": {
+          "evaluation_type": {
+            "type": "string"
+          },
+          "parameter": {
+            "type": "string"
+          },
+          "test_method": {
+            "type": "string"
+          },
+          "specimen_configuration": {
+            "type": "string"
+          },
+          "conditions": {
+            "type": "object"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "result": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "fields": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "evidence_type": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "source_date": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "reference": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "lifecycle_assessment": {
+      "type": "object",
+      "fields": {
+        "functional_unit": {
+          "type": "string"
+        },
+        "system_boundary": {
+          "type": "string"
+        },
+        "methodology": {
+          "type": "string"
+        },
+        "data_sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "evidence_statuses": [
+    "Unverified",
+    "Documented",
+    "Characterized",
+    "Tested",
+    "Validated",
+    "Qualified"
+  ],
+  "data_discipline": {
+    "principles": [
+      "Measured results must retain their test method and conditions.",
+      "Specifications must remain distinct from measured results.",
+      "Targets must remain distinct from achieved results.",
+      "Hypotheses must remain distinct from established facts.",
+      "Evidence must remain connected to its source.",
+      "Evidence must not be generalized beyond its documented scope.",
+      "Application suitability requires application-specific evaluation."
+    ]
+  },
+  "publisher": {
+    "name": "OPUNÉ®",
+    "website": "https://www.opune.in/"
+  }
+}
