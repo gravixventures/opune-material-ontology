@@ -1,0 +1,190 @@
+{
+  "schema_name": "OPUNÉ® Material Ontology Examples",
+  "schema_version": "0.1.0",
+  "description": "Illustrative examples showing how the OPUNÉ® material ontology can represent feedstocks, material architectures, processing, applications, evaluation, and evidence without implying unsupported performance or suitability.",
+  "examples": [
+    {
+      "example_id": "EX-001",
+      "material_name": "Illustrative Agricultural-Residue Material System",
+      "status": "Investigation",
+      "feedstocks": [
+        {
+          "name": "Rice Straw",
+          "classification": "Agricultural Residue",
+          "origin": "Plant-derived agricultural residue"
+        }
+      ],
+      "processing": [
+        {
+          "process_class": "Feedstock Preparation",
+          "process_step": "Preparation of feedstock for material development",
+          "conditions": {}
+        }
+      ],
+      "material_architecture": [
+        {
+          "architecture_class": "Fibrous Structures",
+          "description": "Illustrative fibrous material architecture",
+          "components": [
+            "Feedstock-derived fibrous fraction"
+          ]
+        }
+      ],
+      "applications": [
+        {
+          "application_domain": "Industrial Products",
+          "product_context": "Application-specific evaluation",
+          "construction": "To be defined",
+          "requirements": [
+            "Application-specific requirements must be established before suitability is determined."
+          ]
+        }
+      ],
+      "evaluations": [],
+      "evidence": [],
+      "notes": "Illustrative ontology example only. No performance, certification, commercial suitability, or environmental claim is established by this record."
+    },
+    {
+      "example_id": "EX-002",
+      "material_name": "Illustrative Particulate Biomaterial System",
+      "status": "Development",
+      "feedstocks": [
+        {
+          "name": "Coconut Shell",
+          "classification": "Plant-Derived Particulate Feedstock",
+          "origin": "Plant-derived agricultural or processing residue"
+        }
+      ],
+      "processing": [
+        {
+          "process_class": "Particle Preparation",
+          "process_step": "Preparation of particulate feedstock for material development",
+          "conditions": {}
+        },
+        {
+          "process_class": "Forming",
+          "process_step": "Formation of a defined material architecture",
+          "conditions": {}
+        }
+      ],
+      "material_architecture": [
+        {
+          "architecture_class": "Particulate Composites",
+          "description": "Illustrative particulate composite architecture",
+          "components": [
+            "Plant-derived particulate fraction",
+            "Matrix or binder system"
+          ]
+        }
+      ],
+      "applications": [
+        {
+          "application_domain": "Furniture",
+          "product_context": "Material development evaluation",
+          "construction": "To be defined",
+          "requirements": [
+            "Surface requirements",
+            "Structural requirements",
+            "Durability requirements",
+            "Processing requirements"
+          ]
+        }
+      ],
+      "evaluations": [
+        {
+          "evaluation_type": "Material Characterization",
+          "parameter": "Application-defined material properties",
+          "test_method": "To be defined",
+          "specimen_configuration": "To be defined",
+          "conditions": {},
+          "unit": "To be defined",
+          "result": "Not provided",
+          "status": "Under Evaluation"
+        }
+      ],
+      "evidence": [],
+      "notes": "Illustrative ontology example only. The example does not establish that the material is suitable for furniture or any other application."
+    },
+    {
+      "example_id": "EX-003",
+      "material_name": "Illustrative Plant-Based Surface-Layer System",
+      "status": "Under Evaluation",
+      "feedstocks": [
+        {
+          "name": "Cactus-derived biomass",
+          "classification": "Plant-Derived Biomass",
+          "origin": "Plant-derived feedstock"
+        }
+      ],
+      "processing": [
+        {
+          "process_class": "Material Processing",
+          "process_step": "Development of a defined material layer",
+          "conditions": {}
+        },
+        {
+          "process_class": "Surface Treatment",
+          "process_step": "Application-specific surface development",
+          "conditions": {}
+        }
+      ],
+      "material_architecture": [
+        {
+          "architecture_class": "Surface-Layer Systems",
+          "description": "Illustrative plant-based surface-layer architecture",
+          "components": [
+            "Material surface layer",
+            "Supporting substrate or backing"
+          ]
+        },
+        {
+          "architecture_class": "Backing Architectures",
+          "description": "Illustrative backing configuration supporting the material system",
+          "components": [
+            "Backing substrate"
+          ]
+        }
+      ],
+      "applications": [
+        {
+          "application_domain": "Fashion",
+          "product_context": "Material evaluation",
+          "construction": "To be defined",
+          "requirements": [
+            "Surface character",
+            "Tactile requirements",
+            "Flexibility",
+            "Durability",
+            "Construction compatibility"
+          ]
+        }
+      ],
+      "evaluations": [
+        {
+          "evaluation_type": "Surface Evaluation",
+          "parameter": "Surface characteristics",
+          "test_method": "Application- or method-specific",
+          "specimen_configuration": "To be defined",
+          "conditions": {},
+          "unit": "Method-dependent",
+          "result": "Not provided",
+          "status": "Under Evaluation"
+        }
+      ],
+      "evidence": [],
+      "notes": "Illustrative ontology example only. No universal performance, environmental, biodegradability, certification, or application-suitability claim is established."
+    }
+  ],
+  "usage_rules": [
+    "Examples are illustrative and do not constitute performance claims.",
+    "Missing values should remain explicitly undefined rather than being inferred.",
+    "Application association does not establish application suitability.",
+    "Evaluation status does not establish commercial qualification.",
+    "Environmental characteristics require defined evidence and methodology.",
+    "Material records should be updated when documented evidence becomes available."
+  ],
+  "publisher": {
+    "name": "OPUNÉ®",
+    "website": "https://www.opune.in/"
+  }
+}
